@@ -1,28 +1,76 @@
 {
+  "id": "com.gardvipwifi.app",
+  "name": "Gard VIPWIFI - برنامج حساب كروت الواي فاي",
   "short_name": "Gard VIPWIFI",
-  "name": "Gard VIPWIFI",
-  "description": "منظومة مبتكرة لجرد كروت شبكات الـ WIFI وإدارة حسابات التجار والمبيعات بشكل أوفلاين وسري بالكامل.",
+  "description": "نظام احترافي لإدارة حسابات وجرد كروت شحن الواي فاي، مبيعات التجار وصافي المستحقات مع ميزات تصفية الأرشيف وتوليد تقارير PDF وصور كشوف الحسابات بشكل آمن تماماً.",
+  "categories": [
+    "business",
+    "utilities",
+    "finance",
+    "productivity"
+  ],
+  "lang": "ar",
+  "dir": "rtl",
   "icons": [
     {
       "src": "icon-192.png",
       "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "icon-512.png",
-      "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
     },
     {
       "src": "icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "any"
+    },
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ],
-  "start_url": "/",
+  "screenshots": [
+    {
+      "src": "screenshot-mobile.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "واجهة الهاتف الذكي لتطبيق جرد كروت الواي فاي"
+    },
+    {
+      "src": "screenshot-desktop.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "لوحة التحكم الشاملة لبرنامج جرد كروت الواي فاي"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "جرد جرد جديد",
+      "short_name": "الجرد",
+      "description": "فتح شاشة جرد كروت جديدة مباشرة",
+      "url": "index.html",
+      "icons": [
+        {
+          "src": "icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ],
+  "start_url": "index.html",
   "background_color": "#1e1b4b",
   "theme_color": "#1e1b4b",
   "display": "standalone",
-  "orientation": "portrait"
+  "orientation": "portrait",
+  "scope": "./"
 }

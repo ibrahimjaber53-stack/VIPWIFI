@@ -1,76 +1,48 @@
 {
-  "id": "com.gardvipwifi.app",
-  "name": "Gard VIPWIFI - برنامج حساب كروت الواي فاي",
-  "short_name": "Gard VIPWIFI",
-  "description": "نظام احترافي لإدارة حسابات وجرد كروت شحن الواي فاي، مبيعات التجار وصافي المستحقات مع ميزات تصفية الأرشيف وتوليد تقارير PDF وصور كشوف الحسابات بشكل آمن تماماً.",
-  "categories": [
-    "business",
-    "utilities",
-    "finance",
-    "productivity"
-  ],
-  "lang": "ar",
+  "background_color": "#ffffff",
   "dir": "rtl",
+  "display": "standalone",
+  "name": "GARD VIP WIFI",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "VIPWIFI",
+  "start_url": "/",
+  "theme_color": "#1e1b4b",
   "icons": [
     {
-      "src": "icon-192.png",
+      "src": "https://ibrahimjaber53-stack.github.io/icon-192.png",
+      "type": "image/png",
       "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "any"
+      "isSquare": true,
+      "isPng": true,
+      "isWebp": false,
+      "isJpg": false,
+      "width": 192,
+      "is512x512": false,
+      "is256x256": false,
+      "is192x192": true
     },
     {
-      "src": "icon-512.png",
+      "src": "https://ibrahimjaber53-stack.github.io/icon-512.png",
+      "type": "image/png",
       "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any"
-    },
-    {
-      "src": "icon-192.png",
-      "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "maskable"
-    },
-    {
-      "src": "icon-512.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "maskable"
+      "isSquare": true,
+      "isPng": true,
+      "isWebp": false,
+      "isJpg": false,
+      "width": 512,
+      "is512x512": true,
+      "is256x256": false,
+      "is192x192": false
     }
   ],
-  "screenshots": [
-    {
-      "src": "screenshot-mobile.png",
-      "sizes": "1024x1024",
-      "type": "image/png",
-      "form_factor": "narrow",
-      "label": "واجهة الهاتف الذكي لتطبيق جرد كروت الواي فاي"
-    },
-    {
-      "src": "screenshot-desktop.png",
-      "sizes": "1024x1024",
-      "type": "image/png",
-      "form_factor": "wide",
-      "label": "لوحة التحكم الشاملة لبرنامج جرد كروت الواي فاي"
-    }
+  "id": "VIPWIFI",
+  "description": "GARD VIP WIFI",
+  "display_override": [
+    "minimal-ui",
+    "standalone",
+    "window-controls-overlay",
+    "fullscreen"
   ],
-  "shortcuts": [
-    {
-      "name": "جرد جرد جديد",
-      "short_name": "الجرد",
-      "description": "فتح شاشة جرد كروت جديدة مباشرة",
-      "url": "index.html",
-      "icons": [
-        {
-          "src": "icon-192.png",
-          "sizes": "192x192"
-        }
-      ]
-    }
-  ],
-  "start_url": "index.html",
-  "background_color": "#1e1b4b",
-  "theme_color": "#1e1b4b",
-  "display": "standalone",
-  "orientation": "portrait",
-  "scope": "./"
+  "lang": "ar"
 }

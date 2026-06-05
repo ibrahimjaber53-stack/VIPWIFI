@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Remix: Remix: Remix: Remix: Remix: برنامج حساب كروت الواي فاي",
+  "description": "نظام لإدارة حسابات وجرد كروت شحن الواي فاي، مبيعات التجار وصافي المستحقات مع ميزات تصفية الأرشيف وتوليد تقارير PDF وصور كشوف الحسابات.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

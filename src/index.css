@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;700;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Cairo", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Courier New", Courier, monospace;
+}
+
+/* Custom settings to match original layout */
+body {
+  font-family: var(--font-sans);
+  background-color: #f8fafc;
+  /* منع تكبير الشاشة المتكرر وتنزيل اللمس التلقائي */
+  touch-action: manipulation;
+}
+
+/* تهيئة أزرار الهواتف واللمس ومنع تحديد النصوص العشوائي أثناء النقر المتكرر */
+button, 
+.interactive-touch, 
+[role="button"] {
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  /* تفضيل اللمس السريع */
+  touch-action: manipulation;
+}
+
+/* نمط الأزرار وحقول الإدخال لتتناسب مع أبعاد الإصبع (48px كحد أدنى) */
+.mobile-touch-target {
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input.mobile-touch-target, 
+select.mobile-touch-target {
+  min-height: 48px;
+}
+
+/* حاوية جداول مرنة متوافقة تماماً مع الهواتف الذكية */
+.responsive-table-container {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  display: block;
+}
+
+.auto-fit-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Hide spin-buttons on inputs */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
